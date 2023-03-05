@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  matrimony-user-manager:
+    build: .
+    image: matrimony-user-manager
+    container_name: matrimony-user-manager
+
+    volumes: 
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - '3002:3002'    
+
+
+    
